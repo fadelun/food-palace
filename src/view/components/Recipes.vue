@@ -5,7 +5,28 @@ import ReacipeImage01 from '@/assets/image/recipe-1.png'
 import ReacipeImage02 from '@/assets/image/recipe-2.png'
 import ReacipeImage03 from '@/assets/image/recipe-3.png'
 
-const images = ref([ReacipeImage01, ReacipeImage02, ReacipeImage03])
+// const images = ref([ReacipeImage01, ReacipeImage02, ReacipeImage03])
+
+const recipes = ref([
+  {
+    name: 'Flame-boiled dish',
+    img: ReacipeImage01,
+    rate: '8.5',
+    price: '19.99'
+  },
+  {
+    name: 'Peach Melba dish',
+    img: ReacipeImage02,
+    rate: '9.5',
+    price: '20.99'
+  },
+  {
+    name: 'Delmonico Steak dish',
+    img: ReacipeImage03,
+    rate: '8.0',
+    price: '18.99'
+  }
+])
 </script>
 <template>
   <section id="recipes" class="px-64 mt-[62px] pt-[87px] flex flex-col bg-gradient-orange">
@@ -14,67 +35,41 @@ const images = ref([ReacipeImage01, ReacipeImage02, ReacipeImage03])
       <h2 class="order-1 text-orange font-semibold text-2xl">Recipes</h2>
 
       <ul class="flex justify-between order-3 gap-14 mt-[73px]">
-        <li v-for="(image, index) in images" :key="index" class="">
-          <div class="card w-[354px] rounded-lg bg-green-200">
+        <li v-for="(recipe, index) in recipes" :key="index" class="">
+          <div class="card w-[354px] rounded-lg bg-white">
             <div class="card-header p-3">
               <figure class="w-[330px] mx-auto">
-                <img :src="image" :alt="`recipe image-${index}`" class="rounded-lg" />
+                <img :src="recipe.img" :alt="`recipe image-${index}`" class="rounded-lg" />
               </figure>
             </div>
             <div class="card-main flex px-4">
               <div class="w-2/3">
-                <h2>Flame-boiled dish</h2>
-                <button>ADD TO CART</button>
+                <h2 class="text-xl mb-2">{{ recipe.name }}</h2>
+                <button
+                  class="bg-stone-300 w-[100px] bg-opacity-25 rounded-[15px] text-stone-500 text-[10px] font-medium py-2"
+                >
+                  ADD TO CART
+                </button>
               </div>
 
-              <div class="w-1/3 text-right">
-                <p class="rating"><StarIcon /> 8.5</p>
-                <p class="price">$19.99</p>
+              <div class="w-1/3 text-right font-gliroy">
+                <p
+                  class="rating mb-2 flex justify-end text-base items-center gap-1 text-zinc-500 font-semibold"
+                >
+                  <StarIcon /> <span>{{ recipe.rate }}</span>
+                </p>
+                <p class="price text-orange text-lg">$ {{ recipe.price }}</p>
               </div>
             </div>
           </div>
         </li>
-        <!-- <li>
-        <div class="card">
-          <div class="card-header">
-            <figure>
-              <img src="" alt="" />
-            </figure>
-          </div>
-          <div class="card-main">
-            <div>
-              <h2>asfafadf</h2>
-              <button>ADD TO CART</button>
-            </div>
-
-            <div>
-              <p class="rating">8.5</p>
-              <p class="price">$19.99</p>
-            </div>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="card">
-          <div class="card-header">
-            <figure>
-              <img src="" alt="" />
-            </figure>
-          </div>
-          <div class="card-main">
-            <div>
-              <h2>asfafadf</h2>
-              <button>ADD TO CART</button>
-            </div>
-
-            <div>
-              <p class="rating">8.5</p>
-              <p class="price">$19.99</p>
-            </div>
-          </div>
-        </div>
-      </li> -->
       </ul>
+
+      <button
+        class="order-4 w-60 h-16 bg-orange rounded-full text-white capitalize text-xl font-medium leading-[30px] mt-[72px]"
+      >
+        See more recipes
+      </button>
     </div>
   </section>
 </template>
