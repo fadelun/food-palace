@@ -12,6 +12,7 @@ module.exports = {
       },
       colors: {
         orange: "#FF9401",
+        "abu-abu": '#685D5D'
 
       },
       backgroundImage: {

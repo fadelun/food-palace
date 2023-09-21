@@ -6,7 +6,6 @@ import TakeAway from './components/TakeAway.vue'
 import Testimonial from './components/Testimonial.vue'
 </script>
 <template>
-  <!-- <main class="bg-gradient-to-t from-[#FFEDD300] to-[#FF9401]"> -->
   <main class="mt-[140px]">
     <About />
     <Features />

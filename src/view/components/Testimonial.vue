@@ -27,8 +27,8 @@ import RightArrowIcon from '@/assets/vector/cil_arrow-right.svg'
         </figure>
       </div>
       <div class="arrow absolute bottom-[14%] left-[35%] flex items-center gap-2">
-        <LeftArrowIcon />
-        <RightArrowIcon />
+        <button><LeftArrowIcon /></button>
+        <button><RightArrowIcon /></button>
       </div>
     </div>
   </section>
