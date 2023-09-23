@@ -5,11 +5,23 @@
 /* import another fonts */
 @font-face {
   font-family: Gilroy;
-  src:
-    url('../fonts/Gilroy-ExtraBold.ttf') format('truetype'),
-    url('../fonts/Gilroy-Light.ttf') format('truetype'),
-    url('../fonts/Gilroy-Medium.ttf') format('truetype'),
-    url('../fonts/Gilroy-Bold.ttf') format('truetype');
+  src: url('../fonts/Gilroy-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+}
+@font-face {
+  font-family: Gilroy;
+  src: url('../fonts/Gilroy-Bold.ttf') format('truetype');
+  font-weight: 700;
+}
+@font-face {
+  font-family: Gilroy;
+  src: url('../fonts/Gilroy-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+}
+@font-face {
+  font-family: Gilroy;
+  src: url('../fonts/Gilroy-medium.ttf') format('truetype');
+  font-weight: 500;
 }
 
 @font-face {
@@ -24,6 +36,6 @@
 
   h1,
   h2 {
-    @apply font-gliroy;
+    @apply font-gilroy;
   }
 }
