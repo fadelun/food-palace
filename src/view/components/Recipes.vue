@@ -31,7 +31,7 @@ const recipes = ref([
 <template>
   <section id="recipes" class="px-64 mt-[62px] pt-[87px] flex flex-col bg-gradient-orange">
     <div class="container mx-auto flex flex-col items-center">
-      <h1 class="order-2 font-semibold text-[48px]">Most Popular Items</h1>
+      <h1 class="order-2 font-semibold text-agak-hitam text-[48px]">Most Popular Items</h1>
       <h2 class="order-1 text-orange font-semibold text-2xl">Recipes</h2>
 
       <ul class="flex justify-between order-3 gap-14 mt-[73px]">
@@ -44,21 +44,23 @@ const recipes = ref([
             </div>
             <div class="card-main flex px-4">
               <div class="w-2/3">
-                <h2 class="text-xl mb-2">{{ recipe.name }}</h2>
+                <h2 class="text-xl mb-2 text-agak-hitam font-circular">{{ recipe.name }}</h2>
                 <button
-                  class="bg-stone-300 w-[100px] bg-opacity-25 rounded-[15px] text-stone-500 text-[10px] font-medium py-2"
+                  class="bg-stone-300 w-[100px] bg-opacity-25 rounded-[15px] text-stone-500 text-[10px] font-medium py-2 font-circular"
                 >
                   ADD TO CART
                 </button>
               </div>
 
-              <div class="w-1/3 text-right font-gliroy">
+              <div class="w-1/3 text-right">
                 <p
-                  class="rating mb-2 flex justify-end text-base items-center gap-1 text-zinc-500 font-semibold"
+                  class="rating mb-2 flex justify-end text-base items-center gap-1 text-zinc-500 font-semibold font-gilroy"
                 >
                   <StarIcon /> <span>{{ recipe.rate }}</span>
                 </p>
-                <p class="price text-orange text-lg">$ {{ recipe.price }}</p>
+                <p class="price text-orange font-bold text-lg font-gilroy italic">
+                  $ {{ recipe.price }}
+                </p>
               </div>
             </div>
           </div>

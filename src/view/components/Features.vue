@@ -13,8 +13,8 @@ import TruckImage from '@/assets/vector/truck.svg'
         <figure>
           <FoodImage class="mx-auto" />
           <figcaption>
-            <h2 class="font-semibold text-2xl">Quality Food</h2>
-            <p class="text-lg">
+            <h2 class="font-bold font-gilroy text-2xl mt-12">Quality Food</h2>
+            <p class="text-lg mt-5">
               Keep healthy food readily available. When you get hungry, you’re more likely to
             </p>
           </figcaption>
@@ -24,8 +24,8 @@ import TruckImage from '@/assets/vector/truck.svg'
         <figure>
           <MouthImage class="mx-auto" />
           <figcaption>
-            <h2 class="font-semibold text-2xl">Super Taste</h2>
-            <p class="text-lg">
+            <h2 class="font-bold font-gilroy text-2xl mt-12">Super Taste</h2>
+            <p class="text-lg mt-5">
               Keep healthy food readily available. When you get hungry, you’re more likely to
             </p>
           </figcaption>
@@ -35,8 +35,8 @@ import TruckImage from '@/assets/vector/truck.svg'
         <figure>
           <TruckImage class="mx-auto" />
           <figcaption>
-            <h2 class="font-semibold text-2xl">Fast Delivery</h2>
-            <p class="text-lg">
+            <h2 class="font-bold font-gilroy text-2xl mt-12">Fast Delivery</h2>
+            <p class="text-lg mt-5">
               Keep healthy food readily available. When you get hungry, you’re more likely to.
             </p>
           </figcaption>

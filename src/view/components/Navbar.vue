@@ -10,9 +10,15 @@ import MenuIcon from '@/assets/vector/menu.svg'
       <main-logo />
     </div>
     <div class="wrapper flex list-none w-1/4 md:w-1/6 justify-between">
-      <li><cart-icon /></li>
-      <li><search-icon /></li>
-      <li><menu-icon /></li>
+      <li>
+        <a href="#"> <cart-icon /></a>
+      </li>
+      <li>
+        <a href="#"><search-icon /></a>
+      </li>
+      <li>
+        <a href="#"><menu-icon /></a>
+      </li>
     </div>
   </nav>
 </template>

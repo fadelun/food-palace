@@ -12,11 +12,12 @@ import AppStoreImage from '@/assets/image/app-store-image.png'
         </figure>
       </div>
       <div class="take-away-text w-1/2 flex flex-wrap px-[150px] items-center content-center">
-        <h1 class="order-2 text-[48px] font-bold leading-[60px] mt-6">
+        <h1 class="order-2 text-[48px] font-bold leading-[60px] mt-6 text-agak-hitam">
           Simple Way To Order Your Food
         </h1>
+
         <h2 class="order-1 text-orange font-semibold text-2xl">Take away</h2>
-        <p class="order-3 text-xl font-[450] leading-8 mt-[21px]">
+        <p class="order-3 text-xl font-[450] leading-8 mt-[21px] text-hitam-soft">
           Keep healthy food readily available. When you get hungry, you’re more likely to eat the
           first thing you see on the counter or in the cupboard.
         </p>

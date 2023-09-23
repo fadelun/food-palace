@@ -7,7 +7,7 @@ import HeroImage from '@/assets/image/hero-image.png'
       <div class="sub-header text-orange text-2xl leading-loose flex">
         <span class="relative">Restaurant</span>
       </div>
-      <h1 class="header text-8xl leading-[108px] text-neutral-800 font-extrabold mt-4">
+      <h1 class="header text-8xl leading-[108px] font-gilroy text-neutral-800 font-extrabold mt-4">
         <!-- gambar untuk text 'oo' -->
         <!-- <img :src="smallFoodImage01" alt="o" class="absolute w-16 h-16 shadow" /><img
           :src="smallFoodImage02"
@@ -19,7 +19,7 @@ import HeroImage from '@/assets/image/hero-image.png'
         <span>Good Moo</span>
         <span class="text-neutral-800 text-8xl font-extrabold leading-10">d</span>
       </h1>
-      <p class="description font-normal mt-4">
+      <p class="description font-circular text-xl mt-4 text-hitam-soft">
         The food palace is an neighborhood restaurent serving seasonal global cuisine driven by the
         faire.
       </p>
