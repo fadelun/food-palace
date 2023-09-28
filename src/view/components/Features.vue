@@ -4,12 +4,17 @@ import FoodImage from '@/assets/vector/food.svg'
 import TruckImage from '@/assets/vector/truck.svg'
 </script>
 <template>
-  <section id="features" class="container px-64 mx-auto mt-[62px] flex flex-col items-center">
+  <section
+    id="features"
+    class="container lg:px-20 xl:px-64 mx-auto mt-20 lg:mt-[62px] flex flex-col items-center"
+  >
     <h1 class="order-2 font-bold text-[48px]">Our Awesome Services</h1>
     <h2 class="order-1 text-orange font-semibold text-2xl">Features</h2>
 
-    <ul class="order-3 flex mt-14 gap-x-[118px]">
-      <li class="flex flex-row text-center w-1/3">
+    <ul
+      class="order-3 flex flex-col items-center lg:flex-row mt-14 gap-x-[118px] gap-y-20 lg:gap-y-0"
+    >
+      <li class="flex flex-row text-center lg:w-1/3">
         <figure>
           <FoodImage class="mx-auto" />
           <figcaption>
@@ -20,7 +25,7 @@ import TruckImage from '@/assets/vector/truck.svg'
           </figcaption>
         </figure>
       </li>
-      <li class="flex flex-row text-center w-1/3">
+      <li class="flex flex-row text-center lg:w-1/3">
         <figure>
           <MouthImage class="mx-auto" />
           <figcaption>
@@ -31,7 +36,7 @@ import TruckImage from '@/assets/vector/truck.svg'
           </figcaption>
         </figure>
       </li>
-      <li class="flex flex-row text-center w-1/3">
+      <li class="flex flex-row text-center lg:w-1/3">
         <figure>
           <TruckImage class="mx-auto" />
           <figcaption>

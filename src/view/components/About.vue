@@ -3,16 +3,18 @@ import AboutImage from '@/assets/image/about-image.png'
 import PlayButtonImage from '@/assets/vector/play-button.svg'
 </script>
 <template>
-  <section id="about" class="bg-gradient-orange">
-    <div class="container mx-auto flex">
+  <section id="about" class="bg-gradient-orange md:px-20">
+    <div class="container mx-auto flex flex-col lg:flex-row">
       <!-- preview about image -->
-      <div class="w-1/2 relative">
-        <figure class="relative w-[758px]">
+      <div class="w-full lg:w-1/2 relative">
+        <figure class="relative lg:w-auto lg:min-w-[180px] xl:w-[758px]">
           <img :src="AboutImage" alt="about image" class="" />
           <play-button-image class="absolute right-[26px] bottom-[200px]" />
         </figure>
       </div>
-      <div class="about-text w-1/2 flex flex-wrap px-[130px] items-center content-center">
+      <div
+        class="about-text z-10 w-full lg:w-1/2 flex flex-wrap lg:px-8 xl:px-[130px] items-center content-center mt-20 xl:mt-20"
+      >
         <h1 class="order-2 text-[52px] font-bold leading-[60px] mt-6">
           Simple Way of Eating Delicious
         </h1>

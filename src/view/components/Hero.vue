@@ -1,23 +1,30 @@
 <script setup>
 import HeroImage from '@/assets/image/hero-image.png'
+import SmileImage from '@/assets/image/smile-face.png'
+import HeroTextImage from '@/assets/image/hero-text.png'
 </script>
 <template>
   <section class="hero pt-32 relative flex">
-    <div class="hero-text w-2/5">
+    <div class="hero-text w-full lg:4/5 2xl:w-2/5">
       <div class="sub-header text-orange text-2xl leading-loose flex">
-        <span class="relative">Restaurant</span>
+        <span class="relative">__ Restaurant</span>
       </div>
       <h1 class="header text-8xl leading-[108px] font-gilroy text-neutral-800 font-extrabold mt-4">
         <!-- gambar untuk text 'oo' -->
-        <!-- <img :src="smallFoodImage01" alt="o" class="absolute w-16 h-16 shadow" /><img
-          :src="smallFoodImage02"
-          alt="o"
-        /> -->
-        <span class="">Good Foo</span>
-        <span class="text-neutral-800 text-8xl font-extrabold leading-10">d</span>
-        <br />
-        <span>Good Moo</span>
-        <span class="text-neutral-800 text-8xl font-extrabold leading-10">d</span>
+        <p>
+          <span class="">Good F</span>
+          <img :src="HeroTextImage" alt="o" class="inline w-[62px] -mr-1" />
+          <img :src="HeroTextImage" alt="o" class="inline w-[62px]" />
+
+          <span class="text-neutral-800 text-8xl font-extrabold leading-10">d</span>
+        </p>
+
+        <p>
+          <span>Good M</span>
+          <img :src="SmileImage" alt="o" class="inline w-[52px] mx-1" />
+          <img :src="SmileImage" alt="o" class="inline w-[52px]" />
+          <span class="text-neutral-800 text-8xl font-extrabold leading-10">d</span>
+        </p>
       </h1>
       <p class="description font-circular text-xl mt-4 text-hitam-soft">
         The food palace is an neighborhood restaurent serving seasonal global cuisine driven by the
@@ -43,8 +50,8 @@ import HeroImage from '@/assets/image/hero-image.png'
     </div>
 
     <!-- preview hero image -->
-    <div class="w-3/5 relative">
-      <figure class="relative w-[840px]">
+    <div class="hidden lg:block lg:1/5 2xl:w-3/5 relative">
+      <figure class="relative lg:min-w-[400px] xl:min-w-[550px] 2xl:w-[840px]">
         <img :src="HeroImage" alt="hero image" class="absolute" />
       </figure>
     </div>

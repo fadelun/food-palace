@@ -4,7 +4,7 @@ import Hero from '../view/components/Hero.vue'
 </script>
 <!-- h-[727.22px] -->
 <template>
-  <header class="container px-28 relative mx-auto pt-[46px]">
+  <header class="container md:px-20 xl:px-28 relative mx-auto pt-[46px]">
     <Navbar />
     <Hero />
   </header>

@@ -5,8 +5,6 @@ import ReacipeImage01 from '@/assets/image/recipe-1.png'
 import ReacipeImage02 from '@/assets/image/recipe-2.png'
 import ReacipeImage03 from '@/assets/image/recipe-3.png'
 
-// const images = ref([ReacipeImage01, ReacipeImage02, ReacipeImage03])
-
 const recipes = ref([
   {
     name: 'Flame-boiled dish',
@@ -29,16 +27,19 @@ const recipes = ref([
 ])
 </script>
 <template>
-  <section id="recipes" class="px-64 mt-[62px] pt-[87px] flex flex-col bg-gradient-orange">
+  <section
+    id="recipes"
+    class="lg:px-20 xl:px-64 mt-[62px] pt-[87px] flex flex-col bg-gradient-orange"
+  >
     <div class="container mx-auto flex flex-col items-center">
       <h1 class="order-2 font-semibold text-agak-hitam text-[48px]">Most Popular Items</h1>
       <h2 class="order-1 text-orange font-semibold text-2xl">Recipes</h2>
 
-      <ul class="flex justify-between order-3 gap-14 mt-[73px]">
+      <ul class="flex flex-col xl:flex-row justify-between order-3 gap-14 mt-[73px]">
         <li v-for="(recipe, index) in recipes" :key="index" class="">
-          <div class="card w-[354px] rounded-lg bg-white">
+          <div class="card w-full xl:w-[354px] rounded-lg bg-white">
             <div class="card-header p-3">
-              <figure class="w-[330px] mx-auto">
+              <figure class="xl:w-[330px] mx-auto">
                 <img :src="recipe.img" :alt="`recipe image-${index}`" class="rounded-lg" />
               </figure>
             </div>
