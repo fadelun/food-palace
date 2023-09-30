@@ -9,21 +9,27 @@ import HeroTextImage from '@/assets/image/hero-text.png'
       <div class="sub-header text-orange text-2xl leading-loose flex">
         <span class="relative">__ Restaurant</span>
       </div>
-      <h1 class="header text-8xl leading-[108px] font-gilroy text-neutral-800 font-extrabold mt-4">
+      <h1
+        class="header text-6xl md:text-7xl xl:text-8xl leading-[108px] font-gilroy text-neutral-800 font-extrabold mt-4"
+      >
         <!-- gambar untuk text 'oo' -->
         <p>
           <span class="">Good F</span>
-          <img :src="HeroTextImage" alt="o" class="inline w-[62px] -mr-1" />
-          <img :src="HeroTextImage" alt="o" class="inline w-[62px]" />
+          <img :src="HeroTextImage" alt="o" class="inline w-12 lg:w-[62px] -mr-1" />
+          <img :src="HeroTextImage" alt="o" class="inline w-12 lg:w-[62px]" />
 
-          <span class="text-neutral-800 text-8xl font-extrabold leading-10">d</span>
+          <span class="text-neutral-800 text-6xl lg:text-7xl xl:text-8xl font-extrabold leading-10"
+            >d</span
+          >
         </p>
 
         <p>
           <span>Good M</span>
-          <img :src="SmileImage" alt="o" class="inline w-[52px] mx-1" />
-          <img :src="SmileImage" alt="o" class="inline w-[52px]" />
-          <span class="text-neutral-800 text-8xl font-extrabold leading-10">d</span>
+          <img :src="SmileImage" alt="o" class="inline w-10 lg:w-[52px] mx-1" />
+          <img :src="SmileImage" alt="o" class="inline w-10 lg:w-[52px]" />
+          <span class="text-neutral-800 text-6xl lg:text-7xl xl:text-8xl font-extrabold leading-10"
+            >d</span
+          >
         </p>
       </h1>
       <p class="description font-circular text-xl mt-4 text-hitam-soft">

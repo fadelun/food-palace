@@ -13,7 +13,7 @@ import PlayButtonImage from '@/assets/vector/play-button.svg'
         </figure>
       </div>
       <div
-        class="about-text z-10 w-full lg:w-1/2 flex flex-wrap lg:px-8 xl:px-[130px] items-center content-center mt-20 xl:mt-20"
+        class="about-text z-10 w-full lg:w-1/2 flex flex-wrap lg:px-8 xl:px-[130px] items-center content-center mt-20"
       >
         <h1 class="order-2 text-[52px] font-bold leading-[60px] mt-6">
           Simple Way of Eating Delicious

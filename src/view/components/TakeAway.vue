@@ -4,14 +4,16 @@ import AppStoreImage from '@/assets/image/app-store-image.png'
 </script>
 <template>
   <section id="take-away" class="mt-24">
-    <div class="container mx-auto flex">
+    <div class="container mx-auto flex flex-col lg:flex-row">
       <!-- preview image -->
-      <div class="w-1/2 relative flex justify-end">
+      <div class="w-full lg:w-1/2 relative flex justify-end md:px-20">
         <figure class="relative w-[612px]">
           <img :src="TakeAwayImage" alt="take away image" class="" />
         </figure>
       </div>
-      <div class="take-away-text w-1/2 flex flex-wrap px-[150px] items-center content-center">
+      <div
+        class="take-away-text lg:w-1/2 flex flex-wrap md:px-20 xl:px-[150px] mt-20 lg:mt-0 items-center content-center"
+      >
         <h1 class="order-2 text-[48px] font-bold leading-[60px] mt-6 text-agak-hitam">
           Simple Way To Order Your Food
         </h1>
@@ -22,7 +24,7 @@ import AppStoreImage from '@/assets/image/app-store-image.png'
           first thing you see on the counter or in the cupboard.
         </p>
         <figure class="order-4 mt-12">
-          <img :src="AppStoreImage" alt="app store" />
+          <img :src="AppStoreImage" alt="app store" class="w-screen lg:w-auto" />
         </figure>
       </div>
     </div>

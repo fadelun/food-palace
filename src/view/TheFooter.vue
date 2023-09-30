@@ -6,7 +6,9 @@ import LoveIcon from '@/assets/vector/love.svg'
 </script>
 <template>
   <footer class="bg-gradient-orange pt-[85px]">
-    <div class="container px-28 mx-auto flex justify-around">
+    <div
+      class="container px-20 lg:px-28 mx-auto flex flex-wrap gap-10 lg:gap-x-0 lg:justify-around"
+    >
       <ul class="flex flex-col gap-6">
         <li>
           <a href="#"><MainLogo /></a>
