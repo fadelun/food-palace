@@ -2,15 +2,21 @@
 import HeroImage from '@/assets/image/hero-image.png'
 import SmileImage from '@/assets/image/smile-face.png'
 import HeroTextImage from '@/assets/image/hero-text.png'
+import ExtraImg01 from '@/assets/image/extra-img-1.png'
 </script>
 <template>
   <section class="hero pt-32 relative flex">
+    <img
+      :src="ExtraImg01"
+      alt="extra image"
+      class="absolute hidden lg:block right-[40%] top-[-71px] lg:w-40 xl:w-[251px]"
+    />
     <div class="hero-text w-full lg:4/5 2xl:w-2/5">
-      <div class="sub-header text-orange text-2xl leading-loose flex">
+      <div class="sub-header text-orange textW-2xl leading-loose flex">
         <span class="relative">__ Restaurant</span>
       </div>
       <h1
-        class="header text-6xl md:text-7xl xl:text-8xl leading-[108px] font-gilroy text-neutral-800 font-extrabold mt-4"
+        class="header text-6xl md:text-7xl xl:text-8xl md:leading-[108px] font-gilroy text-neutral-800 font-extrabold mt-4"
       >
         <!-- gambar untuk text 'oo' -->
         <p>

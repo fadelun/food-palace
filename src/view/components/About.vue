@@ -3,7 +3,7 @@ import AboutImage from '@/assets/image/about-image.png'
 import PlayButtonImage from '@/assets/vector/play-button.svg'
 </script>
 <template>
-  <section id="about" class="bg-gradient-orange md:px-20">
+  <section id="about" class="bg-gradient-orange px-10 md:px-20">
     <div class="container mx-auto flex flex-col lg:flex-row">
       <!-- preview about image -->
       <div class="w-full lg:w-1/2 relative">

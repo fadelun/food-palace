@@ -4,7 +4,7 @@ import AppStoreImage from '@/assets/image/app-store-image.png'
 </script>
 <template>
   <section id="take-away" class="mt-24">
-    <div class="container mx-auto flex flex-col lg:flex-row">
+    <div class="container mx-auto px-10 flex flex-col lg:flex-row">
       <!-- preview image -->
       <div class="w-full lg:w-1/2 relative flex justify-end md:px-20">
         <figure class="relative w-[612px]">

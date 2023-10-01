@@ -29,7 +29,7 @@ const recipes = ref([
 <template>
   <section
     id="recipes"
-    class="lg:px-20 xl:px-64 mt-[62px] pt-[87px] flex flex-col bg-gradient-orange"
+    class="px-10 lg:px-20 xl:px-64 mt-[62px] pt-[87px] flex flex-col bg-gradient-orange"
   >
     <div class="container mx-auto flex flex-col items-center">
       <h1 class="order-2 font-semibold text-agak-hitam text-[48px]">Most Popular Items</h1>
