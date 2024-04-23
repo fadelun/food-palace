@@ -4,6 +4,7 @@ import StarIcon from '@/assets/vector/star.svg'
 import ReacipeImage01 from '@/assets/image/recipe-1.png'
 import ReacipeImage02 from '@/assets/image/recipe-2.png'
 import ReacipeImage03 from '@/assets/image/recipe-3.png'
+import ExtraImg04 from '@/assets/image/extra-img-4.png'
 
 const recipes = ref([
   {
@@ -29,7 +30,7 @@ const recipes = ref([
 <template>
   <section
     id="recipes"
-    class="px-10 lg:px-20 xl:px-64 mt-[62px] pt-[87px] flex flex-col bg-gradient-orange"
+    class="px-10 lg:px-20 xl:px-64 mt-[62px] pt-[87px] flex flex-col bg-gradient-orange relative"
   >
     <div class="container mx-auto flex flex-col items-center">
       <h1 class="order-2 font-semibold text-agak-hitam text-[48px]">Most Popular Items</h1>
@@ -74,5 +75,10 @@ const recipes = ref([
         See more recipes
       </button>
     </div>
+    <img
+      :src="ExtraImg04"
+      alt="extra image"
+      class="absolute hidden lg:block lg:w-[86px] lg:top-16 xl:top-20 lg:right-[20%] xl:right-[23%]"
+    />
   </section>
 </template>

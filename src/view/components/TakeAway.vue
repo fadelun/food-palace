@@ -1,9 +1,11 @@
 <script setup>
 import TakeAwayImage from '@/assets/image/take-away-img.png'
 import AppStoreImage from '@/assets/image/app-store-image.png'
+import ExtraImg05 from '@/assets/image/extra-img-5.png'
+import ExtraImg06 from '@/assets/image/extra-img-6.png'
 </script>
 <template>
-  <section id="take-away" class="mt-24">
+  <section id="take-away" class="pt-40 relative">
     <div class="container mx-auto px-10 flex flex-col lg:flex-row">
       <!-- preview image -->
       <div class="w-full lg:w-1/2 relative flex justify-end md:px-20">
@@ -12,7 +14,7 @@ import AppStoreImage from '@/assets/image/app-store-image.png'
         </figure>
       </div>
       <div
-        class="take-away-text lg:w-1/2 flex flex-wrap md:px-20 xl:px-[150px] mt-20 lg:mt-0 items-center content-center"
+        class="take-away-text lg:w-1/2 flex flex-wrap md:px-20 mt-20 lg:mt-0 items-center content-center"
       >
         <h1 class="order-2 text-[48px] font-bold leading-[60px] mt-6 text-agak-hitam">
           Simple Way To Order Your Food
@@ -28,5 +30,15 @@ import AppStoreImage from '@/assets/image/app-store-image.png'
         </figure>
       </div>
     </div>
+    <img
+      :src="ExtraImg05"
+      alt="extra image"
+      className="absolute left-0 top-1 hidden lg:block lg:w-44 xl:w-56"
+    />
+    <img
+      :src="ExtraImg06"
+      alt="extra image"
+      className="absolute right-0 top-1 hidden lg:block lg:w-44 xl:w-56"
+    />
   </section>
 </template>
