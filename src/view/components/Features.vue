@@ -2,6 +2,8 @@
 import MouthImage from '@/assets/vector/mouth.svg'
 import FoodImage from '@/assets/vector/food.svg'
 import TruckImage from '@/assets/vector/truck.svg'
+import ExtraImg02 from '@/assets/image/extra-img-2.png'
+import ExtraImg03 from '@/assets/image/extra-img-3.png'
 </script>
 <template>
   <section
@@ -48,5 +50,11 @@ import TruckImage from '@/assets/vector/truck.svg'
         </figure>
       </li>
     </ul>
+    <img :src="ExtraImg02" alt="extra image" class="absolute left-0 hidden lg:block lg:w-40" />
+    <img
+      :src="ExtraImg03"
+      alt="extra image"
+      class="absolute right-0 hidden lg:block lg:w-44 xl:w-52"
+    />
   </section>
 </template>
