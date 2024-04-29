@@ -16,7 +16,7 @@ import ExtraImg01 from '@/assets/image/extra-img-1.png'
         <span class="relative">__ Restaurant</span>
       </div>
       <h1
-        class="header text-6xl md:text-7xl xl:text-8xl md:leading-[108px] font-gilroy text-neutral-800 font-extrabold mt-4"
+        class="header text-6xl md:text-7xl xl:text-8xl font-gilroy text-neutral-800 font-extrabold mt-4"
       >
         <!-- gambar untuk text 'oo' -->
         <p>
