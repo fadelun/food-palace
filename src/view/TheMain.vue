@@ -6,7 +6,7 @@ import TakeAway from './components/TakeAway.vue'
 import Testimonial from './components/Testimonial.vue'
 </script>
 <template>
-  <main class="mt-[140px] relative">
+  <main class="mt-[140px]">
     <About />
     <Features />
     <Recipes />
