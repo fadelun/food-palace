@@ -1,5 +1,5 @@
 <script setup>
-import TakeAwayImage from '@/assets/image/take-away-img.png'
+import TakeAwayImage from '@/assets/image/take-away-image.png'
 import AppStoreImage from '@/assets/image/app-store-image.png'
 import ExtraImg05 from '@/assets/image/extra-img-5.png'
 import ExtraImg06 from '@/assets/image/extra-img-6.png'
