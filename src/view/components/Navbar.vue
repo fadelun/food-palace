@@ -9,7 +9,7 @@ import MenuIcon from '@/assets/vector/menu.svg'
     <div class="logo">
       <main-logo />
     </div>
-    <div class="wrapper flex list-none w-1/4 md:w-1/6 justify-between">
+    <div class="wrapper list-none hidden sm:flex w-1/4 md:w-1/6 justify-between">
       <li>
         <a href="#"> <cart-icon /></a>
       </li>
@@ -19,6 +19,9 @@ import MenuIcon from '@/assets/vector/menu.svg'
       <li>
         <a href="#"><menu-icon /></a>
       </li>
+    </div>
+    <div class="block sm:hidden">
+      <a href="#"><menu-icon /></a>
     </div>
   </nav>
 </template>
