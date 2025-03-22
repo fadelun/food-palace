@@ -7,9 +7,9 @@ import RightArrowIcon from '@/assets/vector/cil_arrow-right.svg'
   <section id="testimonial" class="mt-40 lg:mt-24 mb-32 relative">
     <div class="container mx-auto flex flex-col lg:flex-row">
       <div
-        class="testimonial-text lg:w-1/2 flex flex-col lg:flex-row lg:flex-wrap px-20 lg:px-14 xl:px-44 items-center content-center"
+        class="testimonial-text lg:w-1/2 flex flex-col lg:flex-row lg:flex-wrap px-6 md:px-20 lg:px-14 xl:px-44 items-center content-center"
       >
-        <h1 class="order-2 text-[48px] text-agak-hitam font-bold leading-[60px] mt-6">
+        <h1 class="order-2 md:text-[48px] text-agak-hitam font-bold md:leading-[60px] mt-6">
           That’s what our Client Says
         </h1>
         <h2 class="order-1 text-orange font-semibold text-2xl">Testimonial</h2>

@@ -23,19 +23,19 @@ const footerLink = {
     <img
       :src="ExtraImg08"
       alt="extra image"
-      className="absolute leftt-0 top-1 hidden lg:block lg:w-44 xl:w-56"
+      className="absolute left-0 top-1 hidden lg:block lg:w-44 xl:w-56"
     />
     <div
-      class="container px-20 lg:px-28 mx-auto flex flex-wrap gap-10 lg:gap-x-0 lg:justify-around"
+      class="container px-6 md:px-20 lg:px-28 mx-auto flex flex-wrap gap-10 lg:gap-x-0 lg:justify-around"
     >
-      <ul class="flex flex-col gap-6">
+      <ul class="flex flex-col w-full md:w-min gap-6">
         <li>
           <a href="#"><MainLogo /></a>
         </li>
         <li><MailIcon class="inline mr-3" /><a href="#">info@food_palace.com</a></li>
         <li><GlobeIcon class="inline mr-3" /><a href="#">www.Food_palace.com</a></li>
       </ul>
-      <ul id="footer-menu" class="flex flex-col gap-5 text-abu-abu">
+      <ul id="footer-menu" class="w-full md:w-min flex flex-col gap-5 text-abu-abu">
         <h2 v-if="footerLink.menu" class="text-agak-hitam">Our menu</h2>
         <li v-for="link in footerLink.menu">
           <a href="#">
@@ -43,7 +43,7 @@ const footerLink = {
           </a>
         </li>
       </ul>
-      <ul id="footer-information" class="flex flex-col gap-5 text-abu-abu">
+      <ul id="footer-information" class="w-full md:w-min flex flex-col gap-5 text-abu-abu">
         <h2 v-if="footerLink.information" class="text-agak-hitam">Information</h2>
         <li v-for="link in footerLink.information">
           <a href="#">
@@ -51,7 +51,7 @@ const footerLink = {
           </a>
         </li>
       </ul>
-      <ul id="footer-links" class="flex flex-col gap-5 text-abu-abu">
+      <ul id="footer-links" class="w-full md:w-min flex flex-col gap-5 text-abu-abu">
         <h2 v-if="footerLink['usefu-links']" class="text-agak-hitam">Useful Links</h2>
         <li v-for="link in footerLink['usefu-links']">
           <a href="#">
@@ -59,7 +59,7 @@ const footerLink = {
           </a>
         </li>
       </ul>
-      <ul id="footer-social" class="flex flex-col gap-5">
+      <ul id="footer-social" class="w-full md:w-min flex flex-col gap-5">
         <h2 v-if="footerLink['social-handles']" class="text-agak-hitam">Social Handles</h2>
         <li v-for="link in footerLink['social-handles']" class="underline">
           <a href="#">

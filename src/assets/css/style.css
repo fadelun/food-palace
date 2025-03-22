@@ -38,4 +38,8 @@
   h2 {
     @apply font-gilroy;
   }
+
+  h1 {
+    @apply text-3xl;
+  }
 }

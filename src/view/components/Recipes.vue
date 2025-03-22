@@ -30,10 +30,10 @@ const recipes = ref([
 <template>
   <section
     id="recipes"
-    class="px-10 lg:px-20 xl:px-64 mt-[62px] pt-[87px] flex flex-col bg-gradient-orange relative"
+    class="px-6 lg:px-20 xl:px-64 mt-[62px] pt-[87px] flex flex-col bg-gradient-orange relative"
   >
     <div class="container mx-auto flex flex-col items-center">
-      <h1 class="order-2 font-semibold text-agak-hitam text-[48px]">Most Popular Items</h1>
+      <h1 class="order-2 font-semibold text-agak-hitam md:text-[48px]">Most Popular Items</h1>
       <h2 class="order-1 text-orange font-semibold text-2xl">Recipes</h2>
 
       <ul class="flex flex-col xl:flex-row justify-between order-3 gap-14 mt-[73px]">

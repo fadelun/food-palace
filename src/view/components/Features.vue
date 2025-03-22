@@ -8,9 +8,9 @@ import ExtraImg03 from '@/assets/image/extra-img-3.png'
 <template>
   <section
     id="features"
-    class="container px-10 lg:px-20 xl:px-64 mx-auto mt-20 lg:mt-[62px] flex flex-col items-center"
+    class="container px-6 lg:px-20 xl:px-64 mx-auto mt-20 lg:mt-[62px] flex flex-col items-center"
   >
-    <h1 class="order-2 font-bold text-[48px]">Our Awesome Services</h1>
+    <h1 class="order-2 font-bold md:text-[48px]">Our Awesome Services</h1>
     <h2 class="order-1 text-orange font-semibold text-2xl">Features</h2>
 
     <ul
