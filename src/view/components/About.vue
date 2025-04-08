@@ -1,4 +1,6 @@
 <script setup>
+import { motion } from 'motion-v'
+
 import AboutImage from '@/assets/image/about-image.png'
 import PlayButtonImage from '@/assets/vector/play-button.svg'
 </script>
@@ -6,16 +8,26 @@ import PlayButtonImage from '@/assets/vector/play-button.svg'
   <section id="about" class="bg-gradient-orange px-6 md:px-20">
     <div class="container mx-auto flex flex-col lg:flex-row">
       <!-- preview about image -->
-      <div class="w-full lg:w-1/2 relative">
+      <motion.div
+        class="w-full lg:w-1/2 relative"
+        :initial="{ opacity: 0, x: -100 }"
+        :whileInView="{ opacity: 1, x: 0 }"
+        :transition="{ duration: 0.5 }"
+        :inViewOptions="{ once: true }"
+      >
         <figure class="relative lg:w-auto lg:min-w-[180px] xl:w-[758px]">
           <img :src="AboutImage" alt="about image" class="" />
           <play-button-image
             class="absolute bottom-0 left-[25%] md:right-[26px] md:bottom-[200px]"
           />
         </figure>
-      </div>
-      <div
+      </motion.div>
+      <motion.div
         class="about-text z-10 w-full lg:w-1/2 flex flex-wrap lg:px-8 xl:px-[130px] items-center content-center mt-20"
+        :initial="{ opacity: 0, x: 100 }"
+        :whileInView="{ opacity: 1, x: 0 }"
+        :transition="{ duration: 0.5 }"
+        :inViewOptions="{ once: true }"
       >
         <h1 class="order-2 md:text-[52px] font-bold md:leading-[60px] mt-6">
           Simple Way of Eating Delicious
@@ -30,7 +42,7 @@ import PlayButtonImage from '@/assets/vector/play-button.svg'
         >
           Explore our story
         </button>
-      </div>
+      </motion.div>
     </div>
   </section>
 </template>

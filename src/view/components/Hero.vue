@@ -1,17 +1,33 @@
+<!-- eslint-disable vue/multi-word-component-names -->
+<!-- eslint-disable no-undef -->
 <script setup>
 import HeroImage from '@/assets/image/hero-image.png'
 import SmileImage from '@/assets/image/smile-face.png'
 import HeroTextImage from '@/assets/image/hero-text.png'
 import ExtraImg01 from '@/assets/image/extra-img-1.png'
+
+// import { onMounted, onUnmounted } from 'vue'
+// eslint-disable-next-line no-unused-vars
+import { motion } from 'motion-v'
 </script>
 <template>
   <section class="hero pt-32 relative flex">
-    <img
+    <motion.img
       :src="ExtraImg01"
       alt="extra image"
       class="absolute hidden lg:block right-[40%] top-[-71px] lg:w-40 xl:w-[251px]"
+      :initial="{ scale: 0 }"
+      :whileInView="{ scale: 1 }"
+      :transition="{ duration: 0.6 }"
+      :inViewOptions="{ once: true }"
     />
-    <div class="hero-text w-full lg:4/5 2xl:w-2/5">
+    <motion.div
+      :initial="{ opacity: 0, x: -100 }"
+      :whileInView="{ opacity: 1, x: 0 }"
+      :transition="{ duration: 0.5 }"
+      :inViewOptions="{ once: true }"
+      class="hero-text w-full lg:4/5 2xl:w-2/5"
+    >
       <div class="sub-header text-orange textW-2xl leading-loose flex">
         <span class="relative">__ Restaurant</span>
       </div>
@@ -61,14 +77,20 @@ import ExtraImg01 from '@/assets/image/extra-img-1.png'
           <a href="#"><font-awesome-icon icon="fa-brands fa-twitter" /></a>
         </li>
       </div>
-    </div>
+    </motion.div>
 
     <!-- preview hero image -->
-    <div class="hidden lg:block lg:1/5 2xl:w-3/5 relative">
+    <motion.div
+      class="hidden lg:block lg:1/5 2xl:w-3/5 relative"
+      :initial="{ opacity: 0, x: 100 }"
+      :whileInView="{ opacity: 1, x: 0 }"
+      :transition="{ duration: 0.5 }"
+      :inViewOptions="{ once: true }"
+    >
       <figure class="relative lg:min-w-[400px] xl:min-w-[550px] 2xl:w-[840px]">
         <img :src="HeroImage" alt="hero image" class="absolute" />
       </figure>
-    </div>
+    </motion.div>
   </section>
 </template>
 <style></style>

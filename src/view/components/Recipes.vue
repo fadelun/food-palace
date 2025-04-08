@@ -1,5 +1,6 @@
 <script setup>
 import { ref } from 'vue'
+import { motion } from 'motion-v'
 import StarIcon from '@/assets/vector/star.svg'
 import ReacipeImage01 from '@/assets/image/recipe-1.png'
 import ReacipeImage02 from '@/assets/image/recipe-2.png'
@@ -37,7 +38,14 @@ const recipes = ref([
       <h2 class="order-1 text-orange font-semibold text-2xl">Recipes</h2>
 
       <ul class="flex flex-col xl:flex-row justify-between order-3 gap-14 mt-[73px]">
-        <li v-for="(recipe, index) in recipes" :key="index" class="">
+        <motion.li
+          v-for="(recipe, index) in recipes"
+          :key="index"
+          :initial="{ opacity: 0, y: 50 }"
+          :whileInView="{ opacity: 1, y: 0 }"
+          :transition="{ duration: 0.3, delay: index * 0.2 }"
+          :inViewOptions="{ once: true }"
+        >
           <div class="card w-full xl:w-[354px] rounded-lg bg-white">
             <div class="card-header p-3">
               <figure class="xl:w-[330px] mx-auto">
@@ -66,7 +74,7 @@ const recipes = ref([
               </div>
             </div>
           </div>
-        </li>
+        </motion.li>
       </ul>
 
       <button
