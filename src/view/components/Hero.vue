@@ -16,27 +16,29 @@ import ExtraImg01 from '@/assets/image/extra-img-1.png'
         <span class="relative">__ Restaurant</span>
       </div>
       <h1
-        class="header text-5xl md:text-7xl xl:text-8xl font-gilroy text-neutral-800 font-extrabold mt-4"
+        class="header text-3xl sm:text-5xl lg:text-7xl xl:text-8xl font-gilroy text-neutral-800 font-extrabold mt-4"
       >
         <!-- gambar untuk text 'oo' -->
-        <p>
+        <div class="">
           <span class="">Good F</span>
-          <img :src="HeroTextImage" alt="o" class="inline w-10 lg:w-[62px] -mr-1" />
-          <img :src="HeroTextImage" alt="o" class="inline w-10 lg:w-[62px]" />
+          <img :src="HeroTextImage" alt="o" class="inline w-6 sm:w-10 lg:w-[62px] -mr-1" />
+          <img :src="HeroTextImage" alt="o" class="inline w-6 sm:w-10 lg:w-[62px]" />
 
-          <span class="text-neutral-800 text-5xl lg:text-7xl xl:text-8xl font-extrabold leading-10"
+          <span
+            class="text-neutral-800 text-3xl sm:text-5xl lg:text-7xl xl:text-8xl font-extrabold leading-10"
             >d</span
           >
-        </p>
+        </div>
 
-        <p>
+        <div>
           <span>Good M</span>
-          <img :src="SmileImage" alt="o" class="inline w-8 lg:w-[52px] mx-1" />
-          <img :src="SmileImage" alt="o" class="inline w-8 lg:w-[52px]" />
-          <span class="text-neutral-800 text-5xl lg:text-7xl xl:text-8xl font-extrabold leading-10"
+          <img :src="SmileImage" alt="o" class="inline w-4 sm:w-8 lg:w-[52px] mx-1" />
+          <img :src="SmileImage" alt="o" class="inline w-4 sm:w-8 lg:w-[52px]" />
+          <span
+            class="text-neutral-800 text-3xl sm:text-5xl lg:text-7xl xl:text-8xl font-extrabold leading-10"
             >d</span
           >
-        </p>
+        </div>
       </h1>
       <p class="description font-circular text-md md:text-xl mt-4 text-hitam-soft">
         The food palace is an neighborhood restaurent serving seasonal global cuisine driven by the
